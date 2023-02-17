@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F66000;
+  display: flex ;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NomeLoja {
+  font-family: 'Inter', sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ContainerFrutas {
+  width: 890px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Carrinho {
+  width: 440px;
+  height: 656px;
+  border-radius: 120px;
+  background-color: #D2C5BB;
+}
+
+img {
+  outline: solid 2px red;
+  width: 25vw;
 }
