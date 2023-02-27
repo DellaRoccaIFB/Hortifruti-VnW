@@ -7,34 +7,146 @@
 }
 
 .mainSection {
-  max-width: 1440px;
+  width: 100%;
+  max-width: 1540px;
+  height: 1224px;
   margin: 0 auto;
+  padding: 82px 0 0 113px;
   background-color: #F66000;
-  display: flex ;
-  flex-wrap: wrap;
 }
 
 .NomeLoja {
   font-family: 'Inter', sans-serif;
-  font-size: 6rem;
+  font-size: 6.66vw;
   font-weight: 400;
   color: white;
 }
 
+.VnW {
+  text-align: center;
+  width: 39vw;
+  max-width: 562px;
+  margin: 0 0 5vw 0;
+}
+
+.VnW,
+.SubtituloLoja {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 4.44vw;
+  font-weight: 400;
+}
+
+.FrutasECarrinho {
+  display: flex;
+}
+
 .ContainerFrutas {
-  width: 890px;
+  margin: 3vw 2.8vw 0 0;
+}
+
+.BoxFrutas {
+  width: 56.4vw;
+  max-width: 841px;
+  height: 30vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.5vw;
+}
+
+.imagemFruta {
+  width: 12vw;
+  max-width: 173px;
+  transition: all 800ms;
+}
+
+.imagemFruta:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .Carrinho {
-  width: 440px;
-  height: 656px;
+  position: relative;
+  width: 30.55vw;
+  max-width: 440px;
+  height: 45.55vw;
+  max-height: 656px;
   border-radius: 120px;
-  background-color: #D2C5BB;
+  background-color: #F7E0CE;
+  margin: -8vw 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-img {
-  outline: solid 2px red;
-  width: 25vw;
+.RetanguloArredondado {
+  width: 24.72vw;
+  max-width: 356px; 
+  height: 24.72vw;
+  max-height: 355px;
+  border-radius: 80px;
+  background-color: #D2C5BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 5vw 0;
+}
+
+.DescricaoCarrinho {
+  width: 16vw;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4vw;
+  font-weight: 400;
+  text-align: center;
+}
+
+.PlusAndMinusButton {
+  width: 17.36vw;
+  max-width: 250px;
+  height: 5.34vw;
+  max-height: 77px;
+  background-color: #D2C5BB;
+  border-radius: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PlusButton,
+.MinusButton {
+  position: relative;
+  width: 1.66vw;
+  max-width: 24px;
+  height: 1.66vw;
+  max-height: 24px;
+  font-size: 2.5vw;
+  border: none;
+  background-color: #D2C5BB;
+  outline: solid 3px black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms;
+}
+.line1,
+.line2,
+.line3 {
+  position: absolute;
+  width: 1vw;
+  height: 2px;
+  background-color: black;
+}
+
+.line2 {
+  rotate: 90deg;
+}
+
+.PlusButton:hover,
+.MinusButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
